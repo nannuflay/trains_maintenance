@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="redirectToLogs(event)">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" value="user@example.com" readonly>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" value="password123" readonly>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+    <script>
+        function redirectToLogs(event) {
+            event.preventDefault();
+            window.location.href = "logs.html";
+        }
+    </script>
+</body>
+
+</html>

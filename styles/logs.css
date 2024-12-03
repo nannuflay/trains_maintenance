@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.navbar h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Links */
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Menu Toggle (Hamburger) */
+.menu-toggle {
+  font-size: 24px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #000;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+}
+
+/* Styling the container and maintenance logs */
+.container {
+  padding: 20px;
+}
+
+.maintenance-log {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.maintenance-log h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.maintenance-log p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Colors for Criticality Levels */
+.critical-high {
+  color: #ff4d4d; /* Bright red for High */
+  font-weight: bold;
+}
+
+.critical-medium {
+  color: #ffa500; /* Orange for Medium */
+  font-weight: bold;
+}
+
+.critical-low {
+  color: #32cd32; /* Lime green for Low */
+  font-weight: bold;
+}

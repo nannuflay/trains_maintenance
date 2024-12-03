@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Maintenance Logs</title>
+    <link rel="stylesheet" href="styles/logs.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>TrainMaintenance</h1>
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+        <nav id="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Train Details</a>
+            <a href="#">Maintenance Logs</a>
+        </nav>
+    </div>
+    <div class="container">
+        <h2>Maintenance Logs</h2>
+        <div class="maintenance-log">
+            <h3>🚂 Brake Inspection</h3>
+            <p>Date: 2024-10-15</p>
+            <p>Duration: 2 hours</p>
+            <p>Technician: Alex Johnson</p>
+            <p>Criticality: <span class="critical-high">High</span></p>
+        </div>
+        <div class="maintenance-log">
+            <h3>🔧 Electrical System Check</h3>
+            <p>Date: 2024-10-10</p>
+            <p>Duration: 1.5 hours</p>
+            <p>Technician: Maria Garcia</p>
+            <p>Criticality: <span class="critical-medium">Medium</span></p>
+        </div>
+        <div class="maintenance-log">
+            <h3>🛠️ Oil Change</h3>
+            <p>Date: 2024-09-30</p>
+            <p>Duration: 1 hour</p>
+            <p>Criticality: <span class="critical-low">Low</span></p>
+        </div>
+    </div>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
